@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.card,
+.response {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.card img {
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: #4b4b4b;
+  border: none;
+  border-radius: 50%;
+}
+.star {
+  text-align: left;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+p {
+  color: #bbb;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.starNumber-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.starRating-button {
+  background-color: #4b4b4b;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.starRating-button:hover {
+  background-color: #f2930e;
+}
+
+.starRating-button.selected {
+  background-color: #fff;
+  color: #000;
+}
+
+.submit-button {
+  background-color: #f2930e;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: #000;
+}
+
+.response h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.response img {
+  margin-bottom: 30px;
+}
+
+.response p {
+  text-align: center;
+}
+
+.rating_result {
+  border-radius: 25px;
+  background: #4b4b4b;
+  color: orange;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  .starRating-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .submit-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+  .starRating-button {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .submit-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
